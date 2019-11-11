@@ -1,0 +1,40 @@
+
+   1. Думаю замыкания могут применятся в интернет магазинах. 
+
+   2. Во втором задании получается следующее:
+   
+   if (!("a" in window)) {
+    var a = 1;
+}
+alert(a); - undefined 
+   
+   
+
+    var b = function a(x) {
+    x && a(--x);
+};
+alert(a); - undefined 
+    
+    
+    
+    function a(x) {
+    return x * 2;
+}
+var a;
+alert(a); - undefined
+   
+   
+    
+    (function b(x, y, a) {
+    arguments[2] = 10;                
+    alert(a);
+}
+b(1, 2, 3); ) - думаю будет 10
+
+
+
+
+function a() {
+    alert(this);
+}
+a.call(null); - не смог догадаться
